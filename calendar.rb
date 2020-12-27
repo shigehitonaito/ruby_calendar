@@ -22,7 +22,8 @@ def calendar_month(year: Date.today.year, month: Date.today.month)
 	puts lastday.strftime("%Y" "%B").center(28)
 
 	# 曜日配列に空白を入れて結合し出力
-	puts ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Stu"].join(" ")
+	# puts ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Stu"].join(" ")と同じ
+	puts %w(Sun Mon Tue Wed Thu Fri Stu).join(" ")
 
 
 	# 初日の曜日番号から初日が始まる曜日分右にシフト
