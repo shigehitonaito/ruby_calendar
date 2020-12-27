@@ -31,11 +31,9 @@ def calendar_month(year: Date.today.year, month: Date.today.month)
 	end
 	# 一週間ごとに改行を挟み、全ての月を表示
 	days.each do |day|
-		if (start+1)%7 == 0
-			print day + "\n"
-		else
-			print day
-		end
+		
+		print (start+1)%7 == 0 ? "#{day}\n" : "#{day}"
+
 		start +=1
 	end
 
